@@ -1,2 +1,2 @@
 # dotnet-extensions
-Libraries with extension methods for many of .NET types. 
+Extension methods for some of the .NET types. 
