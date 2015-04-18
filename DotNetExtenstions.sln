@@ -3,6 +3,21 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{DC2AA572-8B1D-48F0-853F-CC46F6B59A15}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "build", "build", "{26969FD1-938F-4062-8198-C191A7A10781}"
+	ProjectSection(SolutionItems) = preProject
+		build.bat = build.bat
+		build.fsx = build.fsx
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{6866EA9A-D8D5-4799-BB72-5AAD5D956CAE}"
+EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Velyo.Collections.Extensions", "src\Velyo.Collections.Extensions\Velyo.Collections.Extensions.csproj", "{1F850BD8-D906-464F-8433-F794A8A15E33}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Velyo.Extensions", "src\Velyo.Extensions\Velyo.Extensions.csproj", "{AA528A11-81DC-49E8-A478-441A35736F58}"
@@ -36,5 +51,11 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{1F850BD8-D906-464F-8433-F794A8A15E33} = {6866EA9A-D8D5-4799-BB72-5AAD5D956CAE}
+		{AA528A11-81DC-49E8-A478-441A35736F58} = {6866EA9A-D8D5-4799-BB72-5AAD5D956CAE}
+		{35D70109-85A4-405C-87C0-BEA05A953212} = {6866EA9A-D8D5-4799-BB72-5AAD5D956CAE}
+		{930D71F6-E1CC-4E1A-B1C5-69E5666FBEBB} = {6866EA9A-D8D5-4799-BB72-5AAD5D956CAE}
 	EndGlobalSection
 EndGlobal
