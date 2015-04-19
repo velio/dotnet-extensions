@@ -14,6 +14,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "build", "build", "{26969FD1
 	ProjectSection(SolutionItems) = preProject
 		build.bat = build.bat
 		build.fsx = build.fsx
+		nuget.bat = nuget.bat
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{6866EA9A-D8D5-4799-BB72-5AAD5D956CAE}"
@@ -25,6 +26,20 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Velyo.IO.Extensions", "src\Velyo.IO.Extensions\Velyo.IO.Extensions.csproj", "{35D70109-85A4-405C-87C0-BEA05A953212}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Velyo.Web.Extensions", "src\Velyo.Web.Extensions\Velyo.Web.Extensions.csproj", "{930D71F6-E1CC-4E1A-B1C5-69E5666FBEBB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{03E6E121-D461-41F5-964D-19EE8DA4FC8B}"
+	ProjectSection(SolutionItems) = preProject
+		LICENSE = LICENSE
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "nuspec", "nuspec", "{48D6A9A5-EF5B-4163-8BB1-CC0E71052593}"
+	ProjectSection(SolutionItems) = preProject
+		nuspec\Velyo.Collections.Extensions.nuspec = nuspec\Velyo.Collections.Extensions.nuspec
+		nuspec\Velyo.Extensions.nuspec = nuspec\Velyo.Extensions.nuspec
+		nuspec\Velyo.IO.Extensions.nuspec = nuspec\Velyo.IO.Extensions.nuspec
+		nuspec\Velyo.Web.Extensions.nuspec = nuspec\Velyo.Web.Extensions.nuspec
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
