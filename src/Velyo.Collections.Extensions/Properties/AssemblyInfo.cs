@@ -5,7 +5,7 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Velyo.System.Collections.Extensions")]
+[assembly: AssemblyTitle("Velyo.Collections.Extensions")]
 [assembly: AssemblyDescription("Extension methods for some System.Collections classes.")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Velio Ivanov")]
