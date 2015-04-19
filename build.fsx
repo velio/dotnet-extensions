@@ -8,10 +8,7 @@ open System.Reflection
 let buildDir = "./build/"
 let buildLibDir = "./build/lib/"
 
-let getVersion file =
-    let assembly = Assembly.LoadFile(file)
-    let fvi = FileVersionInfo.GetVersionInfo(assembly.Location)
-    fvi.FileVersion;
+let accessKey = ReadFileAsString "my.nukey"
 
 // targets
 Target "Clean" (fun _ ->
@@ -25,9 +22,12 @@ Target "BuildEx" (fun _ ->
     let version = GetAssemblyVersionString "build\lib\Velyo.Extensions.dll"
     NuGet (fun p -> 
         {p with
+            Project = "Velyo.Exensions"
             Version = version
             WorkingDir = buildDir
-            OutputPath = buildDir}) 
+            OutputPath = buildDir
+            AccessKey = accessKey
+            Publish = true}) 
         "nuspec/Velyo.Extensions.nuspec"
 )
 
@@ -38,9 +38,12 @@ Target "BuildCollEx" (fun _ ->
     let version = GetAssemblyVersionString "build\lib\Velyo.Collections.Extensions.dll"
     NuGet (fun p -> 
         {p with
+            Project = "Velyo.Collections.Exensions"
             Version = version
             WorkingDir = buildDir
-            OutputPath = buildDir}) 
+            OutputPath = buildDir
+            AccessKey = accessKey
+            Publish = true}) 
         "nuspec/Velyo.Collections.Extensions.nuspec"
 )
 
@@ -51,9 +54,12 @@ Target "BuildIOEx" (fun _ ->
     let version = GetAssemblyVersionString "build\lib\Velyo.IO.Extensions.dll"
     NuGet (fun p -> 
         {p with
+            Project = "Velyo.IO.Exensions"
             Version = version
             WorkingDir = buildDir
-            OutputPath = buildDir}) 
+            OutputPath = buildDir
+            AccessKey = accessKey
+            Publish = true}) 
         "nuspec/Velyo.IO.Extensions.nuspec"
 )
 
@@ -64,9 +70,12 @@ Target "BuildWebEx" (fun _ ->
     let version = GetAssemblyVersionString "build\lib\Velyo.Web.Extensions.dll"
     NuGet (fun p -> 
         {p with
+            Project = "Velyo.Web.Exensions"
             Version = version
             WorkingDir = buildDir
-            OutputPath = buildDir}) 
+            OutputPath = buildDir
+            AccessKey = accessKey
+            Publish = true}) 
         "nuspec/Velyo.Web.Extensions.nuspec"
 )
 

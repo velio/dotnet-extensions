@@ -1,14 +1,14 @@
 <?xml version="1.0"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
     <metadata>
-        <id>Velyo.Web.Exensions</id>
+        <id>@project@</id>
         <version>@build.number@</version>
         <authors>Velio Ivanov</authors>
         <description>Extension methods for some System.Web classes.</description>
         <owners>Velio Ivanov</owners>
         <requireLicenseAcceptance>false</requireLicenseAcceptance>
         <copyright>Copyright © Velyo 2015</copyright>
-        <tags>Velyo .NET System.Web Extension Methods</tags>
+        <tags>.NET System.Web Extension Methods</tags>
         <projectUrl>https://github.com/velio/dotnet-extensions</projectUrl>
         <licenseUrl>https://raw.githubusercontent.com/velio/dotnet-extensions/master/LICENSE</licenseUrl>
         <dependencies />
