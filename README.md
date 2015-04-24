@@ -7,6 +7,8 @@ Libraries of variety useful .NET extension methods.
 * Velyo.Web.Extensions - Extension methods for some System.Web classes.
 
 Document pages are available [here](https://github.com/velio/dotnet-extensions/tree/master/docs).
+
+[![Build status](https://ci.appveyor.com/api/projects/status/nx57ui12wo9040jy?svg=true)](https://ci.appveyor.com/project/velio_ivanov/dotnet-extensions)
  
 ## Getting started
 
