@@ -5,6 +5,8 @@ Libraries of variety useful .NET extension methods.
 * Velyo.Collections.Extensions - Extension methods for some System.Collections classes.
 * Velyo.IO.Extensions - Extension methods for some System.IO classes.
 * Velyo.Web.Extensions - Extension methods for some System.Web classes.
+
+Document pages are available [here](https://github.com/velio/dotnet-extensions/tree/master/docs).
  
 ## Getting started
 
@@ -27,11 +29,3 @@ To install Velyo.Web.Exensions, run the following command in the [Package Manage
 ```
 PM> Install-Package Velyo.Web.Exensions
 ```
-
-## Velyo.Extensions
-
-## Velyo.Collections.Extensions
-
-## Velyo.IO.Extensions
-
-## Velyo.Web.Extensions
