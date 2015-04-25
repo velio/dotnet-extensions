@@ -8,7 +8,11 @@ Libraries of variety useful .NET extension methods.
 
 Document pages are available [here](https://github.com/velio/dotnet-extensions/tree/master/docs).
 
+## Building the projects
+
 [![Build status](https://ci.appveyor.com/api/projects/status/nx57ui12wo9040jy?svg=true)](https://ci.appveyor.com/project/velio_ivanov/dotnet-extensions)
+
+Run ```nuget.bat``` to install/restore the packages of needed tools, before building the projects.
  
 ## Getting started
 
