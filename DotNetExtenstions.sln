@@ -7,7 +7,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{DC2AA5
 	ProjectSection(SolutionItems) = preProject
 		.nuget\NuGet.Config = .nuget\NuGet.Config
 		.nuget\NuGet.exe = .nuget\NuGet.exe
-		.nuget\NuGet.targets = .nuget\NuGet.targets
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "build", "build", "{26969FD1-938F-4062-8198-C191A7A10781}"
@@ -39,6 +38,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "nuspec", "nuspec", "{48D6A9
 		nuspec\Velyo.Extensions.nuspec = nuspec\Velyo.Extensions.nuspec
 		nuspec\Velyo.IO.Extensions.nuspec = nuspec\Velyo.IO.Extensions.nuspec
 		nuspec\Velyo.Web.Extensions.nuspec = nuspec\Velyo.Web.Extensions.nuspec
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docs", "docs", "{DD5BF74B-816B-48C0-B446-2CDE6D82FF14}"
+	ProjectSection(SolutionItems) = preProject
+		docs\README.md = docs\README.md
 	EndProjectSection
 EndProject
 Global
