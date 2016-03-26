@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.IO;
-
-namespace System.IO
+﻿namespace System.IO
 {
     /// <summary>
     /// Extension methods for <see cref="System.IO.FileStream"/>
@@ -24,7 +18,6 @@ namespace System.IO
         /// <exception cref="InvalidOperationException">Thrown when cannot seek or write in the file stream.</exception>
         public static void DeleteBlock(this FileStream stream, long offset, int count)
         {
-
             #region - Exceptions -
 
             if (stream == null) throw new ArgumentNullException("stream");
@@ -70,7 +63,6 @@ namespace System.IO
         /// <exception cref="InvalidOperationException">Thrown when cannot seek or write in the file stream.</exception>
         public static void InsertBlock(this FileStream stream, long offset, byte[] data, int dataOffset, int dataCount)
         {
-
             #region - Exceptions -
 
             if (stream == null) throw new ArgumentNullException("stream");
@@ -131,7 +123,7 @@ namespace System.IO
         /// <exception cref="InvalidOperationException">Thrown when cannot seek or write in the file stream.</exception>
         public static void InsertBlock(this FileStream stream, long offset, byte[] data)
         {
-            FileStreamExtensions.InsertBlock(stream, offset, data, 0, data.Length);
+            InsertBlock(stream, offset, data, 0, data.Length);
         }
 
         /// <summary>
@@ -149,7 +141,6 @@ namespace System.IO
         /// <exception cref="InvalidOperationException">Thrown when cannot seek or write in the file stream.</exception>
         public static void UpdateBlock(this FileStream stream, long offset, int count, byte[] data, int dataOffset, int dataCount)
         {
-
             #region - Exceptions -
 
             if (stream == null) throw new ArgumentNullException("stream");
@@ -176,7 +167,7 @@ namespace System.IO
                 if (dataCount < count)
                 { // new data size in less than the old one
                     stream.Write(data, dataOffset, dataCount);
-                    FileStreamExtensions.DeleteBlock(stream, stream.Position, margin);
+                    DeleteBlock(stream, stream.Position, margin);
                 }
                 else
                 { // new data size in greater than the old one
@@ -188,7 +179,7 @@ namespace System.IO
                     stream.Seek(-(dataCount - (margin - len)), SeekOrigin.Current);
                     stream.Write(data, dataOffset, dataCount);
 
-                    FileStreamExtensions.InsertBlock(stream, stream.Position, buffer, 0, len);
+                    InsertBlock(stream, stream.Position, buffer, 0, len);
                 }
             }
             else
@@ -211,7 +202,7 @@ namespace System.IO
         /// <exception cref="InvalidOperationException">Thrown when cannot seek or write in the file stream.</exception>
         public static void UpdateBlock(this FileStream stream, long offset, int count, byte[] data)
         {
-            FileStreamExtensions.UpdateBlock(stream, offset, count, data, 0, data.Length);
+            UpdateBlock(stream, offset, count, data, 0, data.Length);
         }
     }
 }

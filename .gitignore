@@ -197,3 +197,9 @@ FakesAssemblies/
 
 # NuGet API Key
 *.nukey
+
+# Nuget Content
+/nuget/collections/
+/nuget/common/
+/nuget/io/
+/nuget/web/

@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.31101.0
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{DC2AA572-8B1D-48F0-853F-CC46F6B59A15}"
 	ProjectSection(SolutionItems) = preProject
@@ -11,6 +11,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{DC2AA5
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "build", "build", "{26969FD1-938F-4062-8198-C191A7A10781}"
 	ProjectSection(SolutionItems) = preProject
+		build-io.bat = build-io.bat
+		build-io.fsx = build-io.fsx
 		build.bat = build.bat
 		build.fsx = build.fsx
 		nuget.bat = nuget.bat
@@ -32,17 +34,12 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		README.md = README.md
 	EndProjectSection
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "nuspec", "nuspec", "{48D6A9A5-EF5B-4163-8BB1-CC0E71052593}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "nuget", "nuget", "{6DA09FB1-1122-4E5C-894B-25561DBA75BD}"
 	ProjectSection(SolutionItems) = preProject
-		nuspec\Velyo.Collections.Extensions.nuspec = nuspec\Velyo.Collections.Extensions.nuspec
-		nuspec\Velyo.Extensions.nuspec = nuspec\Velyo.Extensions.nuspec
-		nuspec\Velyo.IO.Extensions.nuspec = nuspec\Velyo.IO.Extensions.nuspec
-		nuspec\Velyo.Web.Extensions.nuspec = nuspec\Velyo.Web.Extensions.nuspec
-	EndProjectSection
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docs", "docs", "{DD5BF74B-816B-48C0-B446-2CDE6D82FF14}"
-	ProjectSection(SolutionItems) = preProject
-		docs\README.md = docs\README.md
+		nuget\Velyo.Collections.Extensions.nuspec = nuget\Velyo.Collections.Extensions.nuspec
+		nuget\Velyo.Extensions.nuspec = nuget\Velyo.Extensions.nuspec
+		nuget\Velyo.IO.Extensions.nuspec = nuget\Velyo.IO.Extensions.nuspec
+		nuget\Velyo.Web.Extensions.nuspec = nuget\Velyo.Web.Extensions.nuspec
 	EndProjectSection
 EndProject
 Global

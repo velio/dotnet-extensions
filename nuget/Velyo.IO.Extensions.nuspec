@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+    <metadata>
+        <id>@project@</id>
+        <version>@build.number@</version>
+        <authors>Velyo Ivanov</authors>
+        <description>Sources of extension methods for some System.IO classes.</description>
+        <owners>Velyo Ivanov</owners>
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <copyright>Copyright © Velyo 2016</copyright>
+        <tags>.NET System.IO Extension Methods</tags>
+        <projectUrl>https://github.com/velyo/dotnet-extensions</projectUrl>
+        <licenseUrl>https://raw.githubusercontent.com/velyo/dotnet-extensions/master/LICENSE</licenseUrl>
+        <dependencies />
+    </metadata>
+</package>

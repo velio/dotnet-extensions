@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Text;
-
-namespace System.IO
+﻿namespace System.IO
 {
     /// <summary>
     /// Extension methods for <see cref="System.IO.TextReader"/>
