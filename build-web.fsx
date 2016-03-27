@@ -6,8 +6,8 @@ open System.Reflection
 
 // properties
 let nugetDir    = "./nuget/"
-let nugetSpec   = nugetDir + "Velyo.IO.Extensions.nuspec"
-let sourceDir   = "./src/Velyo.IO.Extensions/"
+let nugetSpec   = nugetDir + "Velyo.Web.Extensions.nuspec"
+let sourceDir   = "./src/Velyo.Web.Extensions/"
 let outputDir   = "./build/"
 let version     = "1.1"
 
@@ -17,7 +17,7 @@ let accessKey   = ReadFileAsString "my.nukey"
 Target "NuGet" (fun _ ->
     NuGet (fun p -> 
         {p with
-            Project = "Velyo.IO.Exensions"
+            Project = "Velyo.Web.Exensions"
             Version = version
             WorkingDir = sourceDir
             OutputPath = outputDir

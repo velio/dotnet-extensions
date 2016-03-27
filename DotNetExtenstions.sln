@@ -11,8 +11,14 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{DC2AA5
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "build", "build", "{26969FD1-938F-4062-8198-C191A7A10781}"
 	ProjectSection(SolutionItems) = preProject
+		build-collections.bat = build-collections.bat
+		build-collections.fsx = build-collections.fsx
+		build-common.bat = build-common.bat
+		build-common.fsx = build-common.fsx
 		build-io.bat = build-io.bat
 		build-io.fsx = build-io.fsx
+		build-web.bat = build-web.bat
+		build-web.fsx = build-web.fsx
 		build.bat = build.bat
 		build.fsx = build.fsx
 		nuget.bat = nuget.bat
