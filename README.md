@@ -8,7 +8,7 @@ Libraries of .NET extension methods.
 
 ## Building the projects
 
-Run ```nuget.bat``` to install/restore the packages of needed tools, before building the projects.
+[![Build status](https://ci.appveyor.com/api/projects/status/nx57ui12wo9040jy?svg=true)](https://ci.appveyor.com/project/velio_ivanov/dotnet-extensions)
  
 ## Getting started
 
