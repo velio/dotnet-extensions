@@ -1,16 +1,12 @@
 # .NET Extension Methods
-Libraries of variety useful .NET extension methods. 
+Libraries of .NET extension methods. 
 
 * Velyo.Extensions - Extension methods for some System classes.
 * Velyo.Collections.Extensions - Extension methods for some System.Collections classes.
 * Velyo.IO.Extensions - Extension methods for some System.IO classes.
 * Velyo.Web.Extensions - Extension methods for some System.Web classes.
 
-Document pages are available [here](https://github.com/velio/dotnet-extensions/tree/master/docs).
-
 ## Building the projects
-
-[![Build status](https://ci.appveyor.com/api/projects/status/nx57ui12wo9040jy?svg=true)](https://ci.appveyor.com/project/velio_ivanov/dotnet-extensions)
 
 Run ```nuget.bat``` to install/restore the packages of needed tools, before building the projects.
  
