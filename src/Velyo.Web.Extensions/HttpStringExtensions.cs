@@ -1,15 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿using System.Diagnostics;
 using System.Text;
-using System.Web;
 
 namespace System.Web
 {
     /// <summary>
     /// Extension methods for <see cref="System.String"/> when used in System.Web
     /// </summary>
-    public static class HttpStringExtensions
+    [DebuggerStepThrough]
+    internal static class HttpStringExtensions
     {
         /// <summary>
         /// Decodes a string from URL usage.

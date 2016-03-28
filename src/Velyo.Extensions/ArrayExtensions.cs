@@ -1,18 +1,14 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+﻿using System.Collections;
+using System.Diagnostics;
 
 namespace System
 {
     /// <summary>
     /// Extension methods for .NET arrays.
     /// </summary>
-    public static class ArrayExtensions
+    [DebuggerStepThrough]
+    internal static class ArrayExtensions
     {
-        #region Static Methods ////////////////////////////////////////////////////////////////////
-
         /// <summary>
         /// Shuffles the specified origin.
         /// </summary>
@@ -40,6 +36,5 @@ namespace System
 
             return output;
         }
-        #endregion
     }
 }

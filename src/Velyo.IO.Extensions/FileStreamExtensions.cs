@@ -1,9 +1,12 @@
-﻿namespace System.IO
+﻿using System.Diagnostics;
+
+namespace System.IO
 {
     /// <summary>
     /// Extension methods for <see cref="System.IO.FileStream"/>
     /// </summary>
-    public static class FileStreamExtensions
+    [DebuggerStepThrough]
+    internal static class FileStreamExtensions
     {
         /// <summary>
         /// Deletes a block of bytes from the file stream.

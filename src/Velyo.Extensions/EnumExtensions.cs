@@ -1,25 +1,18 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.ComponentModel;
-using System.Linq;
+using System.Diagnostics;
 using System.Reflection;
-using System.Text;
 
 namespace System
 {
     /// <summary>
     /// Extension methods for <see cref="System.Enum"/>.
     /// </summary>
-    public static class EnumExtensions
+    [DebuggerStepThrough]
+    internal static class EnumExtensions
     {
-        #region Static Fields ///////////////////////////////////////////////////////////
-
         static readonly Dictionary<string, string> _DescriptionsTable = new Dictionary<string, string>();
 
-        #endregion
-
-        #region Methods /////////////////////////////////////////////////////////////////
 
         public static string Description(this Enum value)
         {
@@ -48,6 +41,5 @@ namespace System
             }
             return _DescriptionsTable[key];
         }
-        #endregion
     }
 }

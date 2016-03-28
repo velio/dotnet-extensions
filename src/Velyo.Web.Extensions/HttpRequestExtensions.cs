@@ -1,9 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Web;
+﻿using System.Collections.Generic;
 using System.Collections.Specialized;
+using System.Diagnostics;
 using System.Globalization;
 
 namespace System.Web
@@ -11,7 +8,8 @@ namespace System.Web
     /// <summary>
     /// Extension methods for <see cref="System.Web.HttpRequest" />
     /// </summary>
-    public static class HttpRequestExtensions
+    [DebuggerStepThrough]
+    internal static class HttpRequestExtensions
     {
         /// <summary>
         /// Gets the root path.

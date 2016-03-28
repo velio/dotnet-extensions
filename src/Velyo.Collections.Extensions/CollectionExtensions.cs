@@ -1,14 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+﻿using System.Diagnostics;
 
 namespace System.Collections
 {
     /// <summary>
     /// Extension methods for generic collections.
     /// </summary>
-    public static class CollectionExtensions
+    [DebuggerStepThrough]
+    internal static class CollectionExtensions
     {
         /// <summary>
         /// Determines whether the specified collection is empty.

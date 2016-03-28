@@ -1,17 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+﻿using System.Diagnostics;
 
 namespace System
 {
     /// <summary>
     /// Extension methods for <see cref="System.Guid"/>.
     /// </summary>
-    public static class GuidExtensions
+    [DebuggerStepThrough]
+    internal static class GuidExtensions
     {
-        #region Static Methods //////////////////////////////////////////////////////////
-
         /// <summary>
         /// Converts a string representation of <see cref="System.Guid"/> to a <c>System.Guid</c>.
         /// A return value indicates whether the conversion succeeded.
@@ -28,6 +24,5 @@ namespace System
             }
             return false;
         }
-        #endregion
     }
 }

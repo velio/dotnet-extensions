@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+﻿using System.Diagnostics;
 using System.Threading;
 
 namespace System.Collections.Generic
@@ -9,7 +6,8 @@ namespace System.Collections.Generic
     /// <summary>
     /// Extension methods for generic dictionaries.
     /// </summary>
-    public static class DictionaryExtensions
+    [DebuggerStepThrough]
+    internal static class DictionaryExtensions
     {
         /// <summary>
         /// Synchronizes the specified dictionary.

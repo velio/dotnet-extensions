@@ -1,25 +1,20 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Configuration;
-using System.Linq;
+﻿using System.Diagnostics;
 using System.Net.Mail;
 using System.Text;
-using System.Web;
 
 namespace System.Web
 {
     /// <summary>
     /// 
     /// </summary>
-    public delegate void ProcessRequestCallback(HttpContext context);
+    internal delegate void ProcessRequestCallback(HttpContext context);
 
     /// <summary>
     /// Extension methods for <see cref="System.Web.HttpContext"/>
     /// </summary>
-    public static class HttpContextExtensions
+    [DebuggerStepThrough]
+    internal static class HttpContextExtensions
     {
-        #region Static Methods
-
         /// <summary>
         /// Sends a notification email.
         /// </summary>
@@ -163,6 +158,5 @@ namespace System.Web
         {
             return ResolveServerUrl(context, serverUrl, false);
         }
-        #endregion
     }
 }

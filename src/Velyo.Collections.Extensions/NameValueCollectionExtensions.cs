@@ -1,17 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+﻿using System.Diagnostics;
 
 namespace System.Collections.Specialized
 {
     /// <summary>
     /// Extension methods for <see cref="NameValueCollection"/>.
     /// </summary>
-    public static class NameValueCollectionExtensions
+    [DebuggerStepThrough]
+    internal static class NameValueCollectionExtensions
     {
-        #region Static Methods
-
         public static bool GetBool(this NameValueCollection collection, string key, bool defaultValue = default(bool))
         {
             bool result = defaultValue;
@@ -71,6 +67,5 @@ namespace System.Collections.Specialized
         {
             return collection[key] ?? defaultValue;
         }
-        #endregion
     }
 }

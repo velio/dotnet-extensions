@@ -1,17 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+﻿using System.Text;
 using System.Security.Cryptography;
 using System.IO;
+using System.Diagnostics;
 
 namespace System
 {
-    public static class ByteExtensions
+    [DebuggerStepThrough]
+    internal static class ByteExtensions
     {
-
-        #region Static Methods //////////////////////////////////////////////////////////
-
         /// <summary>
         /// Decrypts the data.
         /// </summary>
@@ -73,6 +69,5 @@ namespace System
                 return msEncrypt.ToArray();
             }
         }
-        #endregion
     }
 }

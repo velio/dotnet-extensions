@@ -1,16 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+﻿using System.Collections.Generic;
 using System.Reflection.Emit;
 using System.Reflection;
+using System.Diagnostics;
 
 namespace System
 {
     /// <summary>
     /// Extension methods for type reflection using dynamic methods.
     /// </summary>
-    public static class TypeDynamicExtensions
+    [DebuggerStepThrough]
+    internal static class TypeDynamicExtensions
     {
         delegate object ContructorDelegate();
         delegate object FieldGetDelegate(object instance);

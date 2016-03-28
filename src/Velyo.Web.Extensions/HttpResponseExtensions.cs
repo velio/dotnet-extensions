@@ -1,21 +1,16 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Web;
+﻿using System.Diagnostics;
 using System.IO.Compression;
 using System.Security.Cryptography;
+using System.Text;
 
 namespace System.Web
 {
     /// <summary>
     /// Extension methods for <see cref="System.Web.HttpResponse" />
     /// </summary>
-    public static class HttpResponseExtensions
+    [DebuggerStepThrough]
+    internal static class HttpResponseExtensions
     {
-
-        #region Static Methods //////////////////////////////////////////////////////////
-
         /// <summary>
         /// Appends file client modified meta.
         /// </summary>
@@ -150,7 +145,5 @@ namespace System.Web
                 response.ReturnNotModified(fileName, modified);
             }
         }
-
-        #endregion
     }
 }

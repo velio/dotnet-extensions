@@ -1,14 +1,12 @@
-﻿using System;
-using System.IO;
-using System.Linq;
-using System.Web;
+﻿using System.Diagnostics;
 
 namespace System.Web.SessionState
 {
     /// <summary>
     /// Extension methods for <see cref="HttpSessionState"/>
     /// </summary>
-    public static class HttpSessionStateExtensions
+    [DebuggerStepThrough]
+    internal static class HttpSessionStateExtensions
     {
         /// <summary>
         /// Tries to get a value from a session, if exists.
@@ -18,7 +16,7 @@ namespace System.Web.SessionState
         /// <param name="key">The key.</param>
         /// <param name="value">The value.</param>
         /// <returns></returns>
-        static public bool TryGet<T>(this HttpSessionState session, string key, out T value)
+        public static bool TryGet<T>(this HttpSessionState session, string key, out T value)
         {
             bool flag = false;
             value = default(T);
